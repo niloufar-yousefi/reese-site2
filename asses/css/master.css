@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf) format("opentype");
+}
+@font-face {
+    font-family: Kanit;
+    src: url(../font/Kanit-Regular.ttf) format("opentype");
+    
+    
+}
+
+@keyframes myCustomAnimation {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .animate-my-custom {
+    animation: myCustomAnimation 0.2s ease-in-out;      
+  }
+  
+  @keyframes onLoadAnimation {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .onLoadAnimation{
+    animation: onLoadAnimation 0.7s ease-in-out;      
+  }
+  
+
+  @keyframes _myAnimation {
+    0% {
+     opacity: 0;
+    }
+    100% {
+     opacity: 1;
+    }
+  }
+  
+  .myAnimation1 {
+    animation:  _myAnimation 0.7s ease-in-out;      
+  }
+
+
+
+  @keyframes _myAnimation2 {
+    0% {
+     transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-30%)
+    }
+  }
+  
+  .myAnimation2 {
+    animation:  _myAnimation2 20s ease-in-out infinite forwards alternate;      
+  }  
+  
+  .box{
+ 
+    clip-path: circle(10% at 100% 100%);
+    transition: all 1s;
+}
