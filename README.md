@@ -1,5 +1,5 @@
 # reese-site2
-**Demo Of Prallax site*
+
 
 - [Demo Project](https://niloufar-yousefi.github.io/reese-site2/)
 
